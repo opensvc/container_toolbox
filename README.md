@@ -35,6 +35,7 @@ Network analysis, Backup, Performance troubleshoot, ...
     man-db 
     mtr-tiny 
     netcat 
+    netcat-openbsd
     net-tools 
     nicstat 
     ngrep 

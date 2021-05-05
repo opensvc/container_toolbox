@@ -35,6 +35,7 @@ RUN apt-get update && apt-get upgrade -y \
     man-db \
     mtr-tiny \
     netcat \
+    netcat-openbsd \
     net-tools \
     nicstat \
     ngrep \
