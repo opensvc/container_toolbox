@@ -24,6 +24,7 @@ RUN apt-get update && apt-get upgrade -y \
     iotop \
     iperf \
     iproute2 \
+    iputils-ping \
     jid \
     jq \
     less \
