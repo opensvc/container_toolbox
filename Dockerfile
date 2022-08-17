@@ -46,6 +46,7 @@ RUN apt-get update && apt-get upgrade -y \
     postgresql-client \
     procps \
     python3 \
+    python3-requests \
     rclone \
     restic \
     rsync \
