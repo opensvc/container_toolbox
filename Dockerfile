@@ -59,6 +59,7 @@ RUN apt-get update && apt-get upgrade -y \
     telnet \
     tcpdump \
     traceroute \
+    unzip \
     vim \
     wget \
     && apt-get clean all && rm -rf /var/lib/apt/lists/*
