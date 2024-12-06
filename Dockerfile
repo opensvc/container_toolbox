@@ -1,8 +1,7 @@
 FROM debian:latest
 
-RUN sed -i 's/$/ contrib non-free/' /etc/apt/sources.list && apt-get update
-
-RUN apt-get update && apt-get upgrade -y \
+RUN sed -i 's/main/main contrib non-free/' /etc/apt/sources.list.d/debian.sources \
+    && apt-get update && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
     apache2-utils \
     arping \
@@ -35,7 +34,7 @@ RUN apt-get update && apt-get upgrade -y \
     manpages \
     man-db \
     mtr-tiny \
-    netcat \
+    netcat-traditional \
     netcat-openbsd \
     net-tools \
     nicstat \
@@ -58,6 +57,7 @@ RUN apt-get update && apt-get upgrade -y \
     stress-ng \
     telnet \
     tcpdump \
+    tini \
     traceroute \
     unzip \
     vim \
